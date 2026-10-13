@@ -1,6 +1,46 @@
 api_version = "3.0"
 
 [[plugins]]
+id = "acousticbrainz-ng"
+uuid = "ba24f3db-fd81-4eba-83af-e329c099cb69"
+name = "AcousticBrainz-ng"
+description = "Analyze track acoustic characteristics (moods, BPM, key, tags, ReplayGain) using Essentia"
+git_url = "https://github.com/cy1der/picard-plugin-acousticbrainz-ng"
+categories = [
+  "metadata",
+]
+trust_level = "community"
+authors = [
+  "cy1der",
+]
+added_at = "2026-10-13T01:01:09Z"
+updated_at = "2026-10-13T01:01:09Z"
+homepage = "https://github.com/cy1der/acousticbrainz-ng"
+license = "GPL-2.0-or-later"
+license_url = "https://www.gnu.org/licenses/gpl-2.0.html"
+long_description = """
+Analyze track acoustic characteristics using [Essentia](https://essentia.upf.edu).
+
+This plugin is not affiliated with the [AcousticBrainz](https://acousticbrainz.org) project.
+This is not a 1:1 recreation of the AcousticBrainz schema, but will provide most of the meaningful data.
+
+External dependencies:
+
+- Analysis tools built on Essentia and TensorFlow, which need to be built with the included scripts (see the homepage)
+- A few MusicNN models (included)
+- [FFmpeg](https://ffmpeg.org)
+
+**This plugin is CPU heavy!**"""
+maintainers = [
+  "cy1der",
+]
+report_bugs_to = "https://github.com/cy1der/acousticbrainz-ng/issues"
+refs = [
+  { name = "apiv3" },
+]
+versioning_scheme = "semver"
+
+[[plugins]]
 id = "add-to-collection"
 uuid = "3713d8f5-72b0-401d-9ec9-3818380bc576"
 name = "Add to Collection"
